@@ -195,4 +195,72 @@ document.addEventListener('DOMContentLoaded', function() {
     };
     
     animateOnScroll();
+
+    // Animate timeline if it exists on the page
+    if (document.querySelector('.timeline')) {
+        animateTimeline();
+    }
+
+    // Animate mission and values cards
+    const missionValuesCards = document.querySelectorAll('.mission-card, .values-card');
+    if (missionValuesCards.length > 0) {
+        const options = {
+            threshold: 0.5
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, options);
+
+        missionValuesCards.forEach(card => {
+            observer.observe(card);
+        });
+    }
+
+    // Animate leadership cards
+    const leaderCards = document.querySelectorAll('.leader-card');
+    if (leaderCards.length > 0) {
+        const options = {
+            threshold: 0.2
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, options);
+
+        leaderCards.forEach(card => {
+            observer.observe(card);
+        });
+    }
 });
+
+// Function to animate the timeline
+function animateTimeline() {
+    const timelineItems = document.querySelectorAll('.timeline-item');
+    const options = {
+        threshold: 0.5
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('fade-in');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, options);
+
+    timelineItems.forEach(item => {
+        observer.observe(item);
+    });
+}
