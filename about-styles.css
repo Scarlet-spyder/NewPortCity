@@ -1,0 +1,35 @@
+/* Add these responsive fixes to the about styles */
+
+@media (max-width: 768px) {
+    .about-content {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  
+    .team-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .team-member {
+      width: 100%;
+    }
+  
+    .timeline {
+      padding-left: 60px;
+    }
+  
+    .timeline-item {
+      width: 100%;
+    }
+  
+    .vision-mission-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .vision-card,
+    .mission-card {
+      width: 100%;
+    }
+  }
+  
+  
