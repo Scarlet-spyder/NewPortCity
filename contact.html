@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - New Port City</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header will be included here -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%20%2821%29-TZEeBMQSYkGGqjTDbAh55Etebsgre4.png" alt="New Port City Logo">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="investment.html">Investment</a></li>
+                    <li><a href="sustainability.html">Sustainability</a></li>
+                    <li><a href="lifestyle.html">Lifestyle</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb Navigation -->
+    <div class="breadcrumb-container">
+        <div class="container">
+            <ul class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li class="active">Contact Us</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+        <div class="hero-content-contact">
+            <div class="container">
+                <h1 class="animate-text">Connect <span>With Us</span></h1>
+                <p class="subtitle animate-text-delay">Your journey to New Port City begins with a conversation</p>
+                <div class="contact-cards animate-cards">
+                    <div class="contact-card">
+                        <div class="icon-container"><i class="fas fa-phone-alt"></i></div>
+                        <h3>Call Us</h3>
+                        <p>07044414004</p>
+                        <p>07048347091</p>
+                        <p>08033422919</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="icon-container"><i class="fas fa-envelope"></i></div>
+                        <h3>Email Us</h3>
+                        <p><a href="mailto:info@newportcity.com">info@newportcity.com</a></p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="icon-container"><i class="fas fa-map-marker-alt"></i></div>
+                        <h3>Visit Us</h3>
+                        <p>New Port City Office<br>Lagos, Nigeria</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- Main Contact Section -->
+    <section class="main-contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Form Column -->
+                <div class="form-column">
+                    <div class="contact-form-container">
+                        <div class="form-header">
+                            <h2>Send Us a Message</h2>
+                            <p>We're eager to hear from you. Complete the form below, and our team will respond promptly.</p>
+                        </div>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Full Name <span class="required">*</span></label>
+                                    <div class="input-wrapper"><i class="fas fa-user"></i><input type="text" id="name" name="name" required></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address <span class="required">*</span></label>
+                                    <div class="input-wrapper"><i class="fas fa-envelope"></i><input type="email" id="email" name="email" required></div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <div class="input-wrapper"><i class="fas fa-phone"></i><input type="tel" id="phone" name="phone"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="interest">I'm interested in</label>
+                                    <div class="input-wrapper"><i class="fas fa-home"></i>
+                                        <select id="interest" name="interest">
+                                            <option value="">Select your interest</option>
+                                            <option value="residential">Residential Property</option>
+                                            <option value="commercial">Commercial Property</option>
+                                            <option value="investment">Investment Opportunities</option>
+                                            <option value="partnership">Business Partnership</option>
+                                            <option value="other">Other Inquiry</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message <span class="required">*</span></label>
+                                <div class="input-wrapper textarea-wrapper"><i class="fas fa-comment"></i><textarea id="message" name="message" rows="6" required></textarea></div>
+                            </div>
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <label for="newsletter">Subscribe to our newsletter for updates</label>
+                            </div>
+                            <div class="button-group">
+                                <button type="submit" class="submit-btn"><span>Send Message</span><i class="fas fa-paper-plane"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Info Column -->
+                <div class="info-column">
+                    <div class="info-card about-card">
+                        <h2>About New Port City</h2>
+                        <p>New Port City is more than a real estate housing and urban development project—it's a movement toward a brighter future for Nigeria and beyond. We invite you to be part of this remarkable journey, whether you're investing in a prosperous commercial venture or buying your dream home.</p>
+                        <p class="highlight">The future starts here.</p>
+                        <div class="cta-buttons">
+                            <a href="#" class="cta-button">Investment Opportunities</a>
+                            <a href="#" class="cta-button secondary">Schedule a Visit</a>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h2>Follow Us</h2>
+                        <p>Stay connected with us for the latest updates.</p>
+                        <div class="social-media-container">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="info-card working-hours">
+                        <h2>Business Hours</h2>
+                        <ul class="hours-list">
+                            <li><span class="day">Monday - Friday:</span><span class="hours">8:00 AM - 6:00 PM</span></li>
+                            <li><span class="day">Saturday:</span><span class="hours">9:00 AM - 4:00 PM</span></li>
+                            <li><span class="day">Sunday:</span><span class="hours">Closed</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section with Tabs -->
+    <section class="map-section">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Find <span>Us</span></h2>
+                <p>Visit our office or explore New Port City development sites</p>
+            </div>
+            
+            <div class="map-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="office">Our Office</button>
+                    <button class="tab-btn" data-tab="site">Development Site</button>
+                </div>
+                
+                <div class="tab-content">
+                    <div class="tab-pane active" id="office">
+                        <div class="map-container">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1016278.9890716069!2d2.9358292811642797!3d6.5479307820605505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0xdc9e87a367c3d9cb!2sLagos%2C%20Nigeria!5e0!3m2!1sen!2sus!4v1646509007963!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                        <div class="location-info">
+                            <div class="location-address">
+                                <h3><i class="fas fa-map-marker-alt"></i> Office Address</h3>
+                                <p>New Port City Headquarters<br>Victoria Island, Lagos<br>Nigeria</p>
+                            </div>
+                            <div class="location-directions">
+                                <a href="#" class="direction-btn"><i class="fas fa-directions"></i> Get Directions</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="site">
+                        <div class="map-container">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1016278.9890716069!2d2.9358292811642797!3d6.5479307820605505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0xdc9e87a367c3d9cb!2sLagos%2C%20Nigeria!5e0!3m2!1sen!2sus!4v1646509007963!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                        <div class="location-info">
+                            <div class="location-address">
+                                <h3><i class="fas fa-city"></i> Development Site</h3>
+                                <p>New Port City Development<br>Lekki Peninsula, Lagos<br>Nigeria</p>
+                            </div>
+                            <div class="location-directions">
+                                <a href="#" class="direction-btn"><i class="fas fa-directions"></i> Get Directions</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Frequently Asked <span>Questions</span></h2>
+                <p>Find answers to common inquiries about New Port City</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What types of properties are available in New Port City?</h3>
+                        <button class="toggle-btn"><i class="fas fa-plus"></i><i class="fas fa-minus"></i></button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>New Port City offers a diverse range of properties including luxury apartments, family homes, commercial spaces, and investment opportunities. Our development is designed to accommodate various needs and preferences.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is the timeline for project completion?</h3>
+                        <button class="toggle-btn"><i class="fas fa-plus"></i><i class="fas fa-minus"></i></button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>New Port City is being developed in multiple phases. The first phase is scheduled for completion by 2026, with subsequent phases following. Contact our team for specific timelines related to properties you're interested in.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Are there payment plans available for properties?</h3>
+                        <button class="toggle-btn"><i class="fas fa-plus"></i><i class="fas fa-minus"></i></button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer flexible payment plans to accommodate various financial situations. Our team can work with you to develop a payment schedule that aligns with your budget and investment strategy.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What amenities will be available in New Port City?</h3>
+                        <button class="toggle-btn"><i class="fas fa-plus"></i><i class="fas fa-minus"></i></button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>New Port City is designed as a comprehensive urban development with world-class amenities including shopping centers, educational institutions, healthcare facilities, recreational parks, and more.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Take the First Step Today</h2>
+                <p>Join us on this remarkable journey and be part of Nigeria's future.</p>
+                <a href="#" class="cta-main-button"><span>Schedule a Consultation</span><i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="cta-image">
+                <img src="images/new-port-city-aerial.jpg" alt="New Port City Aerial View">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer will be included here -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%20%2821%29-TZEeBMQSYkGGqjTDbAh55Etebsgre4.png" alt="New Port City Logo">
+                    </div>
+                    <p>A visionary urban development project creating the sustainable city of tomorrow.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="investment.html">Investment</a></li>
+                        <li><a href="sustainability.html">Sustainability</a></li>
+                        <li><a href="lifestyle.html">Lifestyle</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p>New Port City Development Office<br>
+                    123 Visionary Boulevard<br>
+                    New Port City, NPC 10001</p>
+                    <p>Email: info@newportcity.com<br>
+                    Phone: +1 (555) 123-4567</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon facebook" aria-label="Facebook"></a>
+                        <a href="#" class="social-icon twitter" aria-label="Twitter"></a>
+                        <a href="#" class="social-icon instagram" aria-label="Instagram"></a>
+                        <a href="#" class="social-icon linkedin" aria-label="LinkedIn"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 New Port City Development Corporation. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
